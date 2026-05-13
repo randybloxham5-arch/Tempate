@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020, Nordic Semiconductor
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this
+  ~    list of conditions and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this
+  ~    list of conditions and the following disclaimer in the documentation and/or
+  ~    other materials provided with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may
+  ~    be used to endorse or promote products derived from this software without
+  ~    specific prior written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  ~ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+  ~ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  ~ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  ~ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ~ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  ~ POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+<resources>
+
+    <string name="app_name">nRF Logger Example</string>
+    
+    <string name="action_create">Create log session</string>
+    <string name="action_append">Add</string>
+    <string name="action_open">Show log entries</string>
+    <string name="action_open_sessions">Show all log sessions</string>
+    <string name="action_download">Get nRF Logger</string>
+    
+    <string name="action_append_hint">Some text</string>
+    
+    <string name="log" formatted="false">%1$tR:%1$tS.%1$tL</string>
+    <string-array name="log_levels">
+        <item>DEBUG</item>
+        <item>VERBOSE</item>
+        <item>INFO</item>
+        <item>APPLICATION</item>
+        <item>WARNING</item>
+        <item>ERROR</item>
+    </string-array>
+    
+    <string name="error_no_nrf_logger">nRF Logger is not installed. Using local log.</string>
+    
+    <string name="dialog_title">Create session</string>
+    <string name="dialog_message">Please, provide a key and a name for the new log session:</string>
+    <string name="dialog_key">Key</string>
+    <string name="dialog_name">Name (optional)</string>
+    <string name="dialog_error">The field may not be empty.</string>
+
+</resources>

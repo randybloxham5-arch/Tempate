@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace "no.nordicsemi.android.log.example"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "no.nordicsemi.android.log.example"
+        minSdk 21
+        targetSdk 34
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation project(':log')
+
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.fragment:fragment:1.8.2'
+}
